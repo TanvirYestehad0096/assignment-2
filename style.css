@@ -1,3 +1,10 @@
+/* common colour variables */
+:root{
+    --orange : #E95A08 ;
+    --black : #000000;
+} 
+
+/* nav bar design  */
 .navbar{
     display : flex ;
     justify-content : space-between ;
@@ -18,3 +25,23 @@
     height : 5.125rem ;
 }
 
+/* hero section */
+.hero{
+    display : flex ;
+    align-items : center ;
+    padding : 1.875rem 9.375rem 0 9.375rem ;
+}
+.hero h1{
+    font-size : 3rem ;
+    font-weight : 700 ;
+    color : var(--black) ;
+}
+.hero h1 span{
+    color : var(--orange) ;
+}
+
+.hero p{
+    font-size : 1.375 rem ;
+    font-weight : 400 ;
+    color : #4A4A4A ;
+}
