@@ -1,0 +1,20 @@
+.navbar{
+    display : flex ;
+    justify-content : space-between ;
+    align-items : center ;
+    padding : 1.875rem 9.375rem 0 9.375rem ;
+}
+.menu ul{
+    display : flex ;
+    list-style : none ;
+    gap : 3rem ;
+}
+.menu a{
+    text-decoration : none ;
+    color : #252432 ;
+}
+.logo{
+    width : 8.4375rem ;
+    height : 5.125rem ;
+}
+
