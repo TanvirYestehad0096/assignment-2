@@ -341,3 +341,39 @@ footer li{
     align-items: flex-start;
     gap: 1.5rem;
 }
+
+/* mobile responsive design */
+@media (max-width: 768px) {
+    /* nave part */
+    .navbar{
+        padding: 4.19rem 1rem 0 1rem;
+    }
+    .menu li:not(:last-child){
+        display: none;      
+    }
+    /* hero */
+    .hero{
+        padding: 0;
+        flex-direction: column-reverse;
+        gap: 1.75rem;
+    }
+    .img-container{
+        width: 100%;
+        min-width: 0;
+    }
+    .img-container img{
+        width: 100%;
+        height: auto;
+    }
+    .text-container{
+        padding: 0 1rem;
+    }
+    .hero h1{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .hero p{
+        font-size: 1rem;
+        font-weight:400 ;
+    }
+}
