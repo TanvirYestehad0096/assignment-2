@@ -310,32 +310,38 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-footer p{
+
+footer p {
     max-width: 19rem;
     font-size: 1.375rem;
     font-weight: 400;
     color: #4A4A4A;
 }
-footer ul{
+
+footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: #4A4A4A;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5rem;
 }
-footer li{
+
+footer li {
     margin-bottom: 1rem;
 }
-.footer-middle{
+
+.footer-middle {
     display: flex;
     gap: 6rem;
 }
-.footer-right{
+
+.footer-right {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -344,36 +350,217 @@ footer li{
 
 /* mobile responsive design */
 @media (max-width: 768px) {
+
     /* nave part */
-    .navbar{
+    .navbar {
         padding: 4.19rem 1rem 0 1rem;
     }
-    .menu li:not(:last-child){
-        display: none;      
+
+    .menu li:not(:last-child) {
+        display: none;
     }
+
     /* hero */
-    .hero{
+    .hero {
         padding: 0;
         flex-direction: column-reverse;
         gap: 1.75rem;
     }
-    .img-container{
+
+    .img-container {
         width: 100%;
         min-width: 0;
     }
-    .img-container img{
+
+    .img-container img {
         width: 100%;
         height: auto;
     }
-    .text-container{
+
+    .text-container {
         padding: 0 1rem;
     }
-    .hero h1{
+
+    .hero h1 {
         font-size: 1.5rem;
         font-weight: 700;
     }
-    .hero p{
+
+    .hero p {
         font-size: 1rem;
-        font-weight:400 ;
+        font-weight: 400;
     }
+
+    /* product section */
+    .product {
+        padding: 0 1rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* flower-plants */
+    .flowers-plants {
+        flex-direction: column;
+        padding: 3rem 1rem 0 1rem;
+        gap: 2rem;
+    }
+
+    .img-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .img-content>img:not(.badge) {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .badge {
+        top: -1.5rem;
+        right: 0;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .text-content h2 {
+        font-size: 2rem;
+    }
+
+    .text-content ul {
+        padding-left: 1.25rem;
+    }
+
+    .text-content ul li {
+        font-size: 1rem;
+        color: #4A4A4A;
+    }
+
+    .badge {
+        display: none;
+    }
+
+    /* latest deals */
+    .top-content {
+        padding: 0 1rem;
+    }
+
+    .top-content h3 {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    .top-content p {
+        font-size: 1rem;
+    }
+
+    .top-content p br {
+        display: none;
+    }
+
+    .bottom-content {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        margin-top: 2rem;
+    }
+
+    .img-cards-1,
+    .img-cards-2,
+    .img-cards-3 {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .img-cards-3 .card-text h4 {
+        font-size: 1rem;
+    }
+
+    .img-cards-3 .card-text a {
+        font-size: 0.8rem;
+    }
+
+    /* newsletter */
+    .newsletter {
+        margin-top: 3rem;
+    }
+
+    .bg-img {
+        height: 20rem;
+    }
+
+    .newsletter-content {
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+    .newsletter-content h2 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    .subscribe-form {
+        width: 100%;
+        height: 2.75rem;
+    }
+
+    .subscribe-form input {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.875rem;
+    }
+
+    .subscribe-form button {
+        width: 7rem;
+        font-size: 0.875rem;
+    }
+
+    /* footer */
+    footer {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .footer-middle {
+        gap: 3rem;
+    }
+
+    .footer-right {
+        justify-content: flex-start;
+    }
+
+    /* footer */
+footer {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+}
+
+footer p {
+    font-size: 1rem;
+    max-width: 100%;
+}
+
+footer li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-middle {
+    flex-direction: column;
+    gap: 0;
+}
+
+.footer-right {
+    justify-content: flex-start;
+}
+
+.footer-right img {
+    width: 2rem;
+    height: 2rem;
 }
