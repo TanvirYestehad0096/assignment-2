@@ -103,3 +103,33 @@
     cursor : pointer ;
     
 }
+
+/* flowers&plants section */
+.flowers-plants{
+    display : flex ;
+    align-items : center ;
+    padding : 13.125rem 9.375rem 0 9.375rem ;
+    gap : 3.75rem ;
+}
+.img-content{
+    width : 100% ;
+    height : auto ;
+    display : block ;
+    position : relative ;
+}
+.text-content h2{
+    font-weight : 700 ;
+    font-size : 3.125rem ;
+}
+.text-content ul li{
+    color : #4A4A4A ;
+    font-weight : 400 ;
+    font-size : 1.375rem ;
+}
+.badge{
+    position : absolute ;
+    top : -7rem ;
+    right : -7rem ;
+    width : 17.875rem ;
+    height : 17.875rem ;
+}
